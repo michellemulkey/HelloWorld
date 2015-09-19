@@ -5,7 +5,7 @@ public class HelloWorld {
 		// TODO Auto-generated method stub
 		System.out.println("Hello World!");
 		System.out.println("I'm here!");
-		System.out.println("Is there anybody out there?");	}
-     	System.out.println("Just nod if you can hear me.");	}
-
+		System.out.println("Is there anybody in there?");	
+     	System.out.println("Just nod if you can hear me.");	
+     }
 }
