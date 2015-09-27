@@ -1,7 +1,7 @@
 
 
 public class Sphere extends GeometricObject {
-  double radius = 1;
+  double radius = 1;  // instance variable
   
   Sphere() {
   }
@@ -31,4 +31,5 @@ public class Sphere extends GeometricObject {
   public String printSphere() {
 	  return ("created on " + super.getDateCreated() + "\nradius = " + radius);
 	} 
+  
 }

@@ -1,6 +1,8 @@
+import java.util.StringTokenizer;
+
 public class HelloWorld {
 
-	static final double EARTH_RADIUS = 3959.0; //final = assigned once, static = shared
+	static final double EARTH_RADIUS = 3959.0; //final = assigned once, static = shared (not an instance variable)
 			
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
@@ -11,7 +13,12 @@ public class HelloWorld {
 		Sphere earth = new Sphere(EARTH_RADIUS, "black", false);
 		System.out.printf("Come on, now, the entire area of the World is only %.2f square miles \n", earth.getSurfaceArea());
         System.out.println(earth.printSphere());
-		System.out.println(earth.toString());
+		System.out.println(earth.toString()); //uses GeometricObject method
+		System.out.println(earth.getClass().getName()); //Sphere 
+		System.out.println(Sphere.class.toString()); //Sphere
+		System.out.println(GeometricObject.class.toString());
+		System.out.println(Object.class.toString());
+		
 		/*
 		I hear you're feeling down.
 		Well I can ease your pain
@@ -21,5 +28,44 @@ public class HelloWorld {
 		Just the basic facts.
 		Can you show me where it hurts?		
 		*/
+		
+		//Teach yourself Java in 21 days...
+		
+		//Day 1
+		VolcanoRobot dante = new VolcanoRobot();
+        dante.status = "exploring";
+        dante.speed = 2;
+        dante.temperature = 510;
+        
+        dante.showAttributes();
+        System.out.println("Increasing speed to 3.");
+        dante.speed = 3;
+        dante.showAttributes();
+        System.out.println("Changing temperature to 670.");
+        dante.temperature = 670;
+        dante.showAttributes();
+        System.out.println("Checking the temperature.");
+        dante.checkTemperature();
+        dante.showAttributes();
+        
+        //Day 2
+        
+        //Day 3
+        StringTokenizer st1, st2;
+        
+        String quote1 = "FFFDX 14.65 0.0";
+        st1 = new StringTokenizer(quote1);
+        System.out.println("Token 1: " + st1.nextToken());
+        System.out.println("Token 2: " + st1.nextToken());
+        System.out.println("Token 3: " + st1.nextToken());
+        
+        String quote2 = "COL@80.55@-0.45";
+        st2 = new StringTokenizer(quote2, "@");
+        System.out.println("\nToken 1: " + st2.nextToken());
+        System.out.println("Token 2: " + st2.nextToken());
+        System.out.println("Token 3: " + st2.nextToken());  
+        
+        //Day 4
+		
      }
 }
