@@ -1,11 +1,13 @@
 import java.util.StringTokenizer;
 
+import Day6.*;
+
 public class HelloWorld {
 
 	static final double EARTH_RADIUS = 3959.0; //final = assigned once, static = shared (not an instance variable)
 			
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+
 		System.out.println("Hello");
 		System.out.println("Is there anybody out there?");	
 		System.out.println("Just nod if you can hear me.");	
@@ -72,6 +74,26 @@ public class HelloWorld {
             new InstanceCounter();
         System.out.println("Created " +
                 InstanceCounter.getCount() + " objects");
-		
+
+        
+        // Day 7 Threads and Exceptions
+        // Threads are objects that implement the Runnable interface or extend the Thread clas
+        System.out.println("I'll be back!");       
+        try {
+            Thread.sleep(3000);
+        }
+        catch (InterruptedException ie) {
+            // do nothing
+        }   
+        System.out.println("I'm back!");
+        
+        // runs forever...
+        StockTicker tix = new StockTicker();
+        Thread tickerThread = new Thread(tix);   
+        tickerThread.start();
+        
+        PrimeFinder finder10 = new PrimeFinder(10);
+        PrimeFinder finder100 = new PrimeFinder(100);         
+        
      }
 }
