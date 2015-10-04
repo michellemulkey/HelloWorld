@@ -65,7 +65,13 @@ public class HelloWorld {
         System.out.println("Token 2: " + st2.nextToken());
         System.out.println("Token 3: " + st2.nextToken());  
         
-        //Day 4
+        //Day 6. Packages, Interfaces, and Other Class Features
+        System.out.println("Starting with " +
+        		InstanceCounter.getCount() + " objects");
+        for (int i = 0; i < 500; ++i)
+            new InstanceCounter();
+        System.out.println("Created " +
+                InstanceCounter.getCount() + " objects");
 		
      }
 }
