@@ -1,6 +1,7 @@
 import java.util.StringTokenizer;
 
 import Day6.*;
+import Day7.*;
 
 public class HelloWorld {
 
@@ -93,7 +94,13 @@ public class HelloWorld {
         tickerThread.start();
         
         PrimeFinder finder10 = new PrimeFinder(10);
-        PrimeFinder finder100 = new PrimeFinder(100);         
+        PrimeFinder finder100 = new PrimeFinder(100); 
         
+        // Day 8 Data Structures
+        CodeKeeper keeper = new CodeKeeper();
+        keeper.addCode("Tau");
+        keeper.addCode("Beta");
+        keeper.addCode("Pi");
+        keeper.displayAllCodes();
      }
 }

@@ -2,7 +2,6 @@ package Day6;
 
 public class StockTicker implements Runnable {
 	    public void run() {
-	    	while (true) {
 	        try {
 	            Thread.sleep(3000);
 	        }
@@ -10,6 +9,5 @@ public class StockTicker implements Runnable {
 	            // do nothing
 	        }
 	        System.out.println("...");
-	    	}
 	    }
 }
