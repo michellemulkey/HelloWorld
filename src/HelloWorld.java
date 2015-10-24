@@ -102,5 +102,9 @@ public class HelloWorld {
         keeper.addCode("Beta");
         keeper.addCode("Pi");
         keeper.displayAllCodes();
+        
+        //Setup Eclipse MARS (was using LUNA)
+        System.out.println("I'm on MARS now..."); 
+        
      }
 }
