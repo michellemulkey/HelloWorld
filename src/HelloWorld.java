@@ -10,6 +10,7 @@ public class HelloWorld {
 	public static void main(String[] args) {
 
 		System.out.println("Hello");
+                System.out.println("Raspberry Pi");
 		System.out.println("Is there anybody out there?");	
 		System.out.println("Just nod if you can hear me.");	
 		System.out.println("Is there anyone at home?");		
